@@ -21,3 +21,9 @@ import CalculatorCore
 
 Just drag this file `CalculatorCore/CalculatorCore.swift` into your Xcode project. Since then this core is actually
 part of your project, you don't need the `import` statement.
+
+
+## WenYu
+
+I add the method of calculator such as ```* and /```
+and also add the ```decimal point and %``` to calculate more convinient.
