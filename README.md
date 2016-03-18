@@ -25,5 +25,5 @@ part of your project, you don't need the `import` statement.
 
 ## WenYu
 
-I add the method of calculator such as `\* and /`
+I add the method of calculator such as `* and /`
 and also add the `decimal point and %` to calculate more convinient.
