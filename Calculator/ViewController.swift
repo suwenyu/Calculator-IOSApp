@@ -38,17 +38,14 @@ class ViewController: UIViewController {
 
     
     @IBAction func setPercentage(sender: UIButton) {
-        if (self.displayLabel.floatValue < 1)
-        {
-            var percentnumber = self.displayLabel.floatValue
-            if percentnumber < 1
-            {
-                percentnumber *= 100
-            }
-            self.displayLabel.floatValue = percentnumber
-            self.resetCore()
-            
-        }
+        
+        try! self.core.addStep(self.displayLabel.floatValue)
+        self.displayLabel.floatValue = try! self.core.calculate()
+        
+        var percentnumber = self.displayLabel.floatValue
+            percentnumber /= 100
+        self.displayLabel.floatValue = percentnumber
+        self.resetCore()
     }
     
     
